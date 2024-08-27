@@ -4,7 +4,12 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <main class="w-full lg:w-1/2 mx-auto">
+  <nav class="px-6 lg:px-20 flex w-full h-16 items-center border-b">
+    <h1 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-fuchsia-400">
+      Watermark.in
+    </h1>
+  </nav>
+  <main class="mx-auto lg:px-16">
     <RouterView />
   </main>
 </template>

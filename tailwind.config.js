@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -5,8 +7,15 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: colors.cyan,
+        secondary: colors.teal,
+        neutral: colors.gray,
+      }
+    },
   },
   plugins: [],
+  darkMode: 'selector',
 }
 
